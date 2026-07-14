@@ -40,3 +40,9 @@ migrate-action:
 
 test-target:
 	@echo "value: ${var}"
+
+env-port-forward:
+	@docker compose up -d port-forwarder
+
+env-port-close:
+	@docker compose down port-forwarder
